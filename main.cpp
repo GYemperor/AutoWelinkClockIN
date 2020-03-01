@@ -23,7 +23,7 @@ int main()
                 if(t_tm->tm_hour == 15 && t_tm->tm_min == 1 && t_tm->tm_sec == 0){
                     cout << "It`s time to clock in!" << endl;
                     system("Auto.bat");
-                    cout << "\033[40;32m Next run is 15:01:00 \033[0m" << endl;
+                    cout << "\033[40;32m Next run is 09:01:00 \033[0m" << endl;
                 }
             }
         } else {

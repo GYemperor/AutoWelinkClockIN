@@ -1,4 +1,14 @@
-svc power stayon usb
+adb devices
+timeout /t 3
+adb connect 192.168.1.104:5555
+timeout /t 3
+adb shell svc power stayon ac
+timeout /t 1
+//adb shell input keyevent 82 //解锁手机(如果设置了密码，会提示输入密码)
+//adb shell input text 360360
+//timeout /t 1
+//adb shell input keyevent 66
+//timeout /t 1
 adb shell am force-stop com.huawei.welink
 timeout /t 3
 //welink MainActivity name
